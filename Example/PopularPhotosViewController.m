@@ -1,22 +1,22 @@
 //
 //  RootViewController.m
-//  GoogleSearchBridge
+//  WebScraper
 //
 //  Created by  on 7/7/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "RootViewController.h"
+#import "PopularPhotosViewController.h"
 
 #import "WSWebScraper.h"
 
 #import "UIViewController+WebScraper.h"
 
-@interface RootViewController ()
+@interface PopularPhotosViewController ()
 @property (strong, nonatomic) NSMutableArray* imageURLs;
 @end
 
-@implementation RootViewController
+@implementation PopularPhotosViewController
 
 
 static NSInteger kIndicatorTag = 100;
@@ -24,13 +24,28 @@ static NSInteger kImageCellTag = 200;
 
 @synthesize imageURLs = _imageURLs;
 
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+  self = [super initWithCoder:aDecoder];
+  if(!self){
+    return nil;
+  }
+  
+  self.imageURLs = [NSMutableArray array];
+    
+  return self;
+}
+
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   
   self.tableView.dataSource = self;
-  self.imageURLs = [NSMutableArray array];
-
+  
+  UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+  [indicator startAnimating];
+  self.tableView.tableHeaderView = indicator;
+  
   [self.webScraper scrape:@"http://m.pinterest.com/popular/" 
                  selector:@"//div[@id=\"wrapper\"]//div[@class=\"image\"]//a/img"
                   handler:^(NSArray *elements, NSError *error) {
@@ -44,10 +59,6 @@ static NSInteger kImageCellTag = 200;
                     [self.tableView.tableHeaderView removeFromSuperview]; 
                     [self.tableView reloadData];
                   }];
-  
-  UIActivityIndicatorView* indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-  [indicator startAnimating];
-  self.tableView.tableHeaderView = indicator;
 }
 
 # pragma mark - UITableViewDataSource
