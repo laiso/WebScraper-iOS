@@ -15,9 +15,10 @@
 - (WSWebScraper *)webScraper
 {
   static WSWebScraper *__webScraper;
-  if(__webScraper == nil){
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
     __webScraper = [[WSWebScraper alloc] initWithViewController:self];
-  }
+  });
   return __webScraper;
 }
 

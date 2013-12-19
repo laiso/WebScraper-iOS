@@ -1,7 +1,7 @@
-platform :ios
+platform :ios, '5.0'
 
-dependency 'hpple'
+pod 'hpple'
 
-target :test, :exclusive => false do
-  dependency 'OCHamcrest'
+target :UnitTest, :exclusive => false do
+  pod 'OCHamcrest'
 end

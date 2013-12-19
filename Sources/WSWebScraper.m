@@ -89,29 +89,11 @@
     return NO;
   }
   
-  /*
-  if(!self.catchFlag){
-    dispatch_async(dispatch_get_main_queue(), ^{
-      NSURLResponse* response;
-      NSError* error;
-      NSData* responseData = [NSURLConnection sendSynchronousRequest:newRequest returningResponse:&response error:&error];
-      self.catchFlag = YES;
-      [self.webView loadData:responseData MIMEType:response.MIMEType textEncodingName:response.textEncodingName baseURL:newRequest.URL];
-    });
-    return NO;
-  }
-  */
-  
   return YES;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
-{
-  if(![webView.request.URL.host hasSuffix:self.targetUrl.host]){
-    return;
-  }
-  
-  
+{  
   NSString* head = [webView stringByEvaluatingJavaScriptFromString:@"document.head.innerHTML"];
   NSString* body = [webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
   

@@ -10,6 +10,8 @@
 		073779DA156503FB009FFB2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073779D9156503FB009FFB2A /* UIKit.framework */; };
 		073779DC156503FB009FFB2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073779DB156503FB009FFB2A /* Foundation.framework */; };
 		073779DE156503FB009FFB2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073779DD156503FB009FFB2A /* CoreGraphics.framework */; };
+		07415AB21863333E004C5144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07415AB11863333E004C5144 /* Main.storyboard */; };
+		07415AB5186333A1004C5144 /* PopularPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07415AB4186333A1004C5144 /* PopularPhotosViewController.m */; };
 		07458C8915A84D9900F75BB2 /* UIViewController+WebScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 076A891515A8215C00A4FA33 /* UIViewController+WebScraper.m */; };
 		07458C8A15A84D9900F75BB2 /* WSWebScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 076A891915A8222100A4FA33 /* WSWebScraper.m */; };
 		07458C8D15A84D9900F75BB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073779D9156503FB009FFB2A /* UIKit.framework */; };
@@ -21,20 +23,24 @@
 		07458CBE15A859F700F75BB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07458CB515A859F700F75BB2 /* InfoPlist.strings */; };
 		07458CBF15A859F700F75BB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07458CB815A859F700F75BB2 /* AppDelegate.m */; };
 		07458CC015A859F700F75BB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07458CB915A859F700F75BB2 /* main.m */; };
-		07458CC115A859F700F75BB2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07458CBB15A859F700F75BB2 /* RootViewController.m */; };
 		07458CC215A859F700F75BB2 /* WebScraper-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07458CBC15A859F700F75BB2 /* WebScraper-Info.plist */; };
 		076A891615A8215C00A4FA33 /* UIViewController+WebScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 076A891515A8215C00A4FA33 /* UIViewController+WebScraper.m */; };
 		076A891A15A8222100A4FA33 /* WSWebScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 076A891915A8222100A4FA33 /* WSWebScraper.m */; };
 		07B71C8715B295640062AE74 /* fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 07B71C8615B295640062AE74 /* fixtures */; };
+		480871E747F54662A0E6BA63 /* libPods-UnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B34825DDD1D0413DBA967C41 /* libPods-UnitTest.a */; };
 		779E262C11724468AF1DF2F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FD211D273F4BBC8F654C85 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06F8BCB8E0CF410085145BF1 /* Pods-UnitTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.xcconfig"; path = "Pods/Pods-UnitTest.xcconfig"; sourceTree = "<group>"; };
 		073779D5156503FB009FFB2A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073779D9156503FB009FFB2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		073779DB156503FB009FFB2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		073779DD156503FB009FFB2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		073779F1156503FB009FFB2A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		07415AB11863333E004C5144 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		07415AB3186333A1004C5144 /* PopularPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularPhotosViewController.h; sourceTree = "<group>"; };
+		07415AB4186333A1004C5144 /* PopularPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularPhotosViewController.m; sourceTree = "<group>"; };
 		07458C9715A84D9900F75BB2 /* WebScraper copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WebScraper copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07458C9915A84D9900F75BB2 /* WebScraper copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WebScraper copy-Info.plist"; sourceTree = "<group>"; };
 		07458C9C15A84E3C00F75BB2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +51,6 @@
 		07458CB715A859F700F75BB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07458CB815A859F700F75BB2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		07458CB915A859F700F75BB2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07458CBA15A859F700F75BB2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		07458CBB15A859F700F75BB2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		07458CBC15A859F700F75BB2 /* WebScraper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WebScraper-Info.plist"; sourceTree = "<group>"; };
 		07458CBD15A859F700F75BB2 /* WebScraper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebScraper-Prefix.pch"; sourceTree = "<group>"; };
 		076A891415A8215C00A4FA33 /* UIViewController+WebScraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WebScraper.h"; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 		076A891815A8222100A4FA33 /* WSWebScraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSWebScraper.h; sourceTree = "<group>"; };
 		076A891915A8222100A4FA33 /* WSWebScraper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSWebScraper.m; sourceTree = "<group>"; };
 		07B71C8615B295640062AE74 /* fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fixtures; sourceTree = "<group>"; };
+		B34825DDD1D0413DBA967C41 /* libPods-UnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FD211D273F4BBC8F654C85 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3915D5B2BFB43FFAB0AB232 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -78,6 +83,7 @@
 				07458C8E15A84D9900F75BB2 /* Foundation.framework in Frameworks */,
 				07458C8F15A84D9900F75BB2 /* CoreGraphics.framework in Frameworks */,
 				07458CA315A84F8100F75BB2 /* libPods-test.a in Frameworks */,
+				480871E747F54662A0E6BA63 /* libPods-UnitTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,7 @@
 				073779D6156503FB009FFB2A /* Products */,
 				E3915D5B2BFB43FFAB0AB232 /* Pods.xcconfig */,
 				07458C9915A84D9900F75BB2 /* WebScraper copy-Info.plist */,
+				06F8BCB8E0CF410085145BF1 /* Pods-UnitTest.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +123,7 @@
 				073779F1156503FB009FFB2A /* SenTestingKit.framework */,
 				B4FD211D273F4BBC8F654C85 /* libPods.a */,
 				07458CA215A84F8100F75BB2 /* libPods-test.a */,
+				B34825DDD1D0413DBA967C41 /* libPods-UnitTest.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,12 +152,13 @@
 		07458CB415A859F700F75BB2 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				07415AB11863333E004C5144 /* Main.storyboard */,
 				07458CB515A859F700F75BB2 /* InfoPlist.strings */,
 				07458CB715A859F700F75BB2 /* AppDelegate.h */,
 				07458CB815A859F700F75BB2 /* AppDelegate.m */,
+				07415AB3186333A1004C5144 /* PopularPhotosViewController.h */,
+				07415AB4186333A1004C5144 /* PopularPhotosViewController.m */,
 				07458CB915A859F700F75BB2 /* main.m */,
-				07458CBA15A859F700F75BB2 /* RootViewController.h */,
-				07458CBB15A859F700F75BB2 /* RootViewController.m */,
 				07458CBC15A859F700F75BB2 /* WebScraper-Info.plist */,
 				07458CBD15A859F700F75BB2 /* WebScraper-Prefix.pch */,
 			);
@@ -181,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07458C9415A84D9900F75BB2 /* Build configuration list for PBXNativeTarget "UnitTest" */;
 			buildPhases = (
+				52D586CFACE54CFC8CBBD926 /* Check Pods Manifest.lock */,
 				07458C8215A84D9900F75BB2 /* Sources */,
 				07458C8C15A84D9900F75BB2 /* Frameworks */,
 				07458C9115A84D9900F75BB2 /* Resources */,
@@ -227,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07415AB21863333E004C5144 /* Main.storyboard in Resources */,
 				07458CBE15A859F700F75BB2 /* InfoPlist.strings in Resources */,
 				07458CC215A859F700F75BB2 /* WebScraper-Info.plist in Resources */,
 			);
@@ -255,7 +266,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-UnitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		10FB372EF4F643828C8AC9F4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -271,6 +283,21 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		52D586CFACE54CFC8CBBD926 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -279,10 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				076A891615A8215C00A4FA33 /* UIViewController+WebScraper.m in Sources */,
+				07415AB5186333A1004C5144 /* PopularPhotosViewController.m in Sources */,
 				076A891A15A8222100A4FA33 /* WSWebScraper.m in Sources */,
 				07458CBF15A859F700F75BB2 /* AppDelegate.m in Sources */,
 				07458CC015A859F700F75BB2 /* main.m in Sources */,
-				07458CC115A859F700F75BB2 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +419,7 @@
 		};
 		07458C9515A84D9900F75BB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3915D5B2BFB43FFAB0AB232 /* Pods.xcconfig */;
+			baseConfigurationReference = 06F8BCB8E0CF410085145BF1 /* Pods-UnitTest.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -412,7 +439,7 @@
 		};
 		07458C9615A84D9900F75BB2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3915D5B2BFB43FFAB0AB232 /* Pods.xcconfig */;
+			baseConfigurationReference = 06F8BCB8E0CF410085145BF1 /* Pods-UnitTest.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/xcodeproj.dst;
 				FRAMEWORK_SEARCH_PATHS = (
